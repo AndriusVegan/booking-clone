@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { trending_data } from "@/data/trending";
+import SearchForm from "@/components/SearchForm";
 
 export default function Home() {
   return (
-    <main className="bg-[013B94]">
+    <main className="bg-[#013B94]">
       <section className="max-w-7xl mx-auto p-6">
         <h2 className="font-bold text-5xl text-white">Find your Next Stay</h2>
         <h3 className="text-white py-5 text-xl">
@@ -11,8 +12,8 @@ export default function Home() {
         </h3>
       </section>
 
-      <section className="m-4 mt-0 -mb-14 px-2 lg:px-4">
-        {/* Search FLow */}
+      <section className="m-1 mt-0 mb-3 px-2  lg:px-4">
+        <SearchForm />
       </section>
       <section className="mx-auto max-w-7xl mt-10 p-6 bg-white rounded-t-lg">
         <div className="pt-5">
