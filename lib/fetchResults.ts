@@ -10,7 +10,6 @@ export async function fetchResults(searchParams: SearchParams) {
     if (key === "url" || key === "location") return;
 
     const value = searchParams[key as keyof SearchParams];
-    // checks the values and then appends
 
     if (typeof value === "string") {
       url.searchParams.append(key, value);
@@ -128,11 +127,11 @@ export async function fetchResults(searchParams: SearchParams) {
     },
   };
 
-  const response = await fetch("https://realtime.oxylabs.io/vi/queries", {
+  const response = await fetch("https://realtime.oxylabs.io/v1/queries", {
     method: "POST",
     body: JSON.stringify(body),
     next: {
-      revalidate: 60 * 60, // every hour revalidate
+      revalidate: 60 * 60, // cache for 1 hour
     },
     headers: {
       "Content-Type": "application/json",
