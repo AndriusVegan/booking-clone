@@ -26,3 +26,5 @@ function LoadingResults() {
 }
 
 export default LoadingResults;
+
+// at the top level of the app for other pages can have a different loader

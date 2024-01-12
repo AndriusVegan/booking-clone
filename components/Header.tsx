@@ -57,6 +57,7 @@ function Header() {
             />
           </Link>
         </div>
+
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -67,7 +68,7 @@ function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gpa-x-12">
+        <Popover.Group className="hidden lg:flex lg:gpa-x-12 ">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
               Stays
@@ -134,16 +135,28 @@ function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-white lg:mx-2"
+          >
             Flights
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-white lg:mx-2"
+          >
             Car Rentals
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-white lg:mx-2"
+          >
             Attractions
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-white lg:mx-2 "
+          >
             Flight + Hotel
           </a>
         </Popover.Group>
